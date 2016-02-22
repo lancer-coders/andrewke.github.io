@@ -85,25 +85,25 @@ body {
 
 #hardware_panel {
   background-color: white;
-  border-top: 1px solid #F7F7F7;
+  border-top: 1px solid #E7E7E7;
   padding: 50px;
 }
 
 #skills_panel {
   background-color: white;
-  border-top: 1px solid #F7F7F7;
+  border-top: 1px solid #E7E7E7;
   padding: 50px;
 }
 
 #about_panel{
   background-color: white;
-  border-top: 1px solid #F7F7F7;
+  border-top: 1px solid #E7E7E7;
   padding: 50px;
 }
 
 #courses_panel{
   background-color: white;
-  border-top: 1px solid #F7F7F7;
+  border-top: 1px solid #E7E7E7;
   padding: 50px;
 }
 
@@ -111,14 +111,14 @@ body {
   color: #808080;
   padding: 20px;
   padding-bottom: 10px;
-  background-color: #F7F7F7;
+  background-color: #E7E7E7;
 }
 
 #intro_panel {
   color: #808080;
   padding: 10px;
   font-size: 1.2em;
-  background-color: #F7F7F7;
+  background-color: #E7E7E7;
 }
 
 #email {
@@ -132,7 +132,7 @@ body {
   padding: 10px;
   margin-top: 50px;
   text-decoration: none;
-  background-color: #F7F7F7;
+  background-color: #E7E7E7;
   color: #808080;
 }
 

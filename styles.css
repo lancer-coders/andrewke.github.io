@@ -1,25 +1,211 @@
+/*
+  Intro
+*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 html, body {
-    height: 100%;
-    overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: auto;
-    line-height: 1.5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Raleway"; /*400 600*/
+  font-weight: 400;
+  text-align: center;
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+.inline {
+  display: inline-block;
+}
+/*Header Stuff*/
+#grabber {
+  text-align: center;
+  font-size: 1.3em;
+  margin: 20px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  color: #797979;
+}
+
+#top_panel {
+  right:0;
+  width:100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0px;
+
+  background: url('img/mountain-background.jpg') no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+/*Cards Stuff*/
+
+.card {
+  width: 400px;
+  height: 400px;
+  background-color: #F4F4F4;
+  display: inline-block;
+  margin: 20px 10px;
+  top: 0px;
+  vertical-align: top;
+  color: grey;
+  text-decoration: none;
+}
+
+.card-logo {
+  margin-top: 50px;
+  width:  100px;
+  border-radius: 20px;
+}
+
+.card-title {
+  color: #606060;
+  font-size: 2em;
+}
+
+.card-text {
+  padding: 0px 5px;
+  padding-bottom: 10px;
+}
+
+.card-image {
+  background-color: red;
+  background: url('img/modern-office.png');
+  background-size: 100%;
+  height: 200px;
+}
+
+/*Panel Stuff*/
+.section-title-bar {
+  width: 200px;
+  margin: 20px auto;
+  color: white;
+  font-size: 2em;
+  border-radius: 10px;
+}
+
+.screenshot {
+  padding: 0px 10px;
+  width: 15%
+}
+
+.apps-background {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+
+  background: url('img/polygons.jpg') no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  padding: 30px 0px;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.clear { clear: both; }
+
+#grid-circle {
+  display: inline-block;
+  margin-top: 80px;
+  margin-left: 40px;
+  float: left;
+  /*vertical-align: middle;*/
+}
+
+#grid-left-panel {
+  margin-left: 260px;
+  padding-left: 20px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.grid-text {
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+
+.grid-background {
+  font-family: Raleway;
+  background: url('img/grid-blur.png') no-repeat;
+  background-size: 100%;
+  background-position: center;
+  color: white;
+  text-align: left;
+  margin-bottom: 40px;
+  padding: 40px 0px;
+}
+
+#grid-awards{
+  margin: 20px;
+  margin-left: 5px;;
+}
+
+#congress {
+  margin-top: -20px;
+}
+#grid-congres {
+  margin: 20px;
+}
+
+#grid-title {
+  font-weight: 200;
+  font-size: 5em;
 }
 
 #heading {
@@ -35,44 +221,16 @@ body {
   font-size: 1.5em;
 }
 
-#social_div{
-  /*background-color: rgba(255, 255, 255, 0.3);
-  margin: auto;
-  width: 500px;
-  padding: 20px;*/
-}
 
-#top_panel {
-  right:0;
-  width:100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin: 0px;
-  background-image: url("./mountain-background.jpg");
-  background-position: 0px -450px;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-size: cover;
-}
 
-#video {
-  position: fixed;
-  top: -25vw;
-  /*top: 0;*/
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 56.25vw;
-  z-index: -10;
-}
+
 
 #apps_panel {
-  padding: 50px;
   background-color: white;
   /*background-color: #00FFCC;*/
   /*border: 10px solid white;*/
-  border-bottom: 0px;
+  border-bottom: 1px;
+  padding-bottom: 50px;
 }
 
 
@@ -84,9 +242,9 @@ body {
 }
 
 #hardware_panel {
+  padding: 40px 0px;
   background-color: white;
   border-top: 1px solid #E7E7E7;
-  padding: 50px;
 }
 
 #skills_panel {
@@ -95,6 +253,9 @@ body {
   padding: 50px;
 }
 
+.skills-text {
+  padding-bottom: 20px;
+}
 #about_panel{
   background-color: white;
   border-top: 1px solid #E7E7E7;
@@ -121,11 +282,6 @@ body {
   background-color: #E7E7E7;
 }
 
-#email {
-  display: block;
-  padding-bottom: 10px;
-  color: white;
-}
 
 #resume_button{
   border-radius: 5px;
@@ -138,16 +294,6 @@ body {
 
 #about_paragraph{
   padding: 0px 20%;
-}
-
-body {
-  font-family: "Raleway"; /*400 600*/
-  font-weight: 400;
-  text-align: center;
-  color: black;
-  padding: 0px;
-  margin: 0px;
-  height: 100%;
 }
 
 .section_image {

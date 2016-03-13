@@ -13,6 +13,13 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,200' rel='stylesheet' type='text/css'>
     <link href="hover-min.css" rel="stylesheet">
     <base target="_blank">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
+    <script src = "index.js">
+
+    </script>
+
 </head>
 
 <body>
@@ -24,33 +31,86 @@
 <div id = "top_panel">
     <h1 id = "heading">Andrew Ke</h1>
     <h2 id = "social_div">
-        <a href = "https://www.github.com/AndrewKe" class = ""><img src = "github.png" class = "social"></a>
-        <a href = "https://www.linkedin.com/in/andrew-ke-1a9903b6"><img src = "linkedin.png" class = "social"></a>
-        <a href = "https://www.andrewke.org"><img src = "wordpress.png" class = "social"></a>
-        <a href = "mailto:andrew@andrewke.org"><img src = "mail.png" class = "social"></a>
+        <a href = "https://www.github.com/AndrewKe" class = ""><img src = "img/github.png" class = "social"></a>
+        <a href = "https://www.linkedin.com/in/andrew-ke-1a9903b6"><img src = "img/linkedin.png" class = "social"></a>
+        <a href = "https://www.andrewke.org"><img src = "img/wordpress.png" class = "social"></a>
+        <a href = "mailto:andrew@andrewke.org"><img src = "img/mail.png" class = "social"></a>
     </h2>
 </div>
 
 <div id = "intro_panel">
-    <p>I'm a 16 year old iOS and Full Stack Javascript App Developer who loves projects and building things.</p>
+    <p>I’m a 16 year old iOS and Full Stack Javascript Developer .</p>
 </div>
 
+
+
+<p id = "grabber">
+  I’ve done every kind of projects from apps to drones to games. In 2014, I was invited to the White House for my work on a Maker Faire project. Check out my projects below.
+</p>
+
 <div id = "apps_panel">
-    <img src = "app_store.png" class = "section_image">
+
+    <img src = "img/app_store.png" class = "section_image">
     <h3 class = "section_header">Apps</h3>
-    <a href = "https://itunes.apple.com/us/app/tripcipe/id917896046?mt=8" class = "link">Tripcipe</a><span class = "text"> - Trip planning insanely simplified</span>
-    <a href = "https://www.formative.care/" class = "link">Fomative Care</a><span class = "text"> - A social network for dementia patients</span>
-    <a href = "https://itunes.apple.com/us/app/remixes-find-remixes-your/id1070012493" class = "link">Remixes</a><span class = "text"> - An easy way to find remixes of songs</span>
-    <a href = "https://github.com/AndrewKe/iSleep" class = "link">iSleep</a><span class = "text"> - Keep healthy sleeping habits</span>
-    <a href = "https://github.com/SFHSHacks/DriveSafe" class = "link">Drive Safe</a><span class = "text"> - Driving made safe! Speed tracking app</span>
-    <a href = "https://github.com/AndrewKe/Shuffle" class = "link">Shuffle</a><span class = "text"> - An educational but addicting word game!</span>
-    <a href = "https://github.com/AndrewKe/Conway-s-Game-Of-Life-Simulator" class = "link">Game of Life</a><span class = "text"> - Full iOS Simulator of Conway's game of life</span>
-    <a href = "https://github.com/AndrewKe/Cards" class = "link">Cards</a><span class = "text"> - Play the classic game of SET on iOS</span>
-    <a href = "https://github.com/AndrewKe/PiDrone" class = "link">PiDrone App</a><span class = "text"> - Control drones from an iPad (HD Video Stream Included!)</span>
+
+    <!-- <div class = "section-title-bar" style="background-color:#FF6565">Apps</div> -->
+
+    <div class = "apps-background">
+      <img class = "screenshot fade-in one" src = "img/tripcipe-shot.png"/>
+      <img class = "screenshot fade-in one" src = "img/isleep-shot.png"/>
+      <img class = "screenshot fade-in one" src = "img/drivesafe-shot.png"/>
+      <img class = "screenshot fade-in one" src = "img/remixes-shot.png"/>
+    </div>
+
+    <div id="app-cards">
+
+    </div>
+</div>
+
+<div id = "hardware_panel">
+    <!-- <div class = "section-title-bar" style="background-color:#FAB32C">Maker</div> -->
+    <img src = "img/chip.png" class = "section_image">
+    <h3 class = "section_header">Maker Projects</h3>
+
+    <div class = "grid-background">
+
+      <span class="helper"></span>
+      <img id = "grid-circle" src="img/grid-circle.png"/>
+      <div id="grid-left-panel">
+        <p id = "grid-title">
+          The Grid
+        </p>
+
+        <div id="grid-awards">
+
+          <img style="vertical-align:middle" src="img/award.png" />
+          <span class = "grid-text">
+            8+ Editor’s Choice Ribbons at Maker Faires
+          </span>
+        </div>
+
+        <div id="grid-congress">
+          <img id = "congress" style="vertical-align:middle" src="img/congress.png" />
+          <span class = "grid-text">
+            Invitee to Innaugural White House Maker Faire
+          </span>
+        </div>
+
+        <br class="clear" />
+      </div>
+    </div>
+
+    <div id="grid-cards"></div>
+
+    <!-- <a href = "https://sites.google.com/site/teampathfinderdsm/" class = "link">The Grid</a><span class = "text"> - Award winning massive LED Gaming Platform exhibited at Maker Faire (Featured on Hackaday)</span>
+    <a href = "https://andrewke.org/?s=pi+drone" class = "link">The PiDrone</a><span class = "text"> - Custom built Raspberry Pi WiFi drone with HD Video Streaming and iPad control</span> -->
+    <a href = "https://andrewke.org/?s=sports+clock" class = "link">Sports Clock</a><span class = "text"> - Sports scores on a clock! Powered by a Particle Core and Node.js</span>
+    <a href = "https://goo.gl/M7866j" class = "link">Smart Arduino Gumball Machine</a><span class = "text"> - Only dispenses candy if you knock a secret code on it</span>
+    <a href = "https://goo.gl/M7866j" class = "link">Sandwich</a><span class = "text"> - A simple line follower robot built in 4th grade</span>
 </div>
 
 <div id = "programming_projects_panel">
-    <img src = "terminal.png" class = "section_image">
+    <img src = "img/terminal.png" class = "section_image">
     <h3 class = "section_header">Programming Projects</h3>
     <a href = "https://www.npmjs.com/package/spotify-mp3-playlist-downloader" class = "link">Spotify Playlist Downloader (NPM)</a><span class = "text"> - Node.js module to download Spotify songs and playlists with full metadata</span>
     <a href = "https://www.npmjs.com/package/mlb-scores" class = "link">MLB Scores Downloader (NPM)</a><span class = "text"> - Node.js module to get live MLB sports scores</span>
@@ -59,27 +119,25 @@
     <a href = "https://github.com/AndrewKe/Remix50" class = "link">Remix50</a><span class = "text"> - Web version of the remixes app (CS50 Final Project)</span>
 </div>
 
-<div id = "hardware_panel">
-    <img src = "chip.png" class = "section_image">
-    <h3 class = "section_header">Maker Projects</h3>
-    <a href = "https://sites.google.com/site/teampathfinderdsm/" class = "link">The Grid</a><span class = "text"> - Award winning massive LED Gaming Platform exhibited at Maker Faire (Featured on Hackaday)</span>
-    <a href = "https://andrewke.org/?s=pi+drone" class = "link">The PiDrone</a><span class = "text"> - Custom built Raspberry Pi WiFi drone with HD Video Streaming and iPad control</span>
-    <a href = "https://andrewke.org/?s=sports+clock" class = "link">Sports Clock</a><span class = "text"> - Sports scores on a clock! Powered by a Particle Core and Node.js</span>
-    <a href = "https://goo.gl/M7866j" class = "link">Smart Arduino Gumball Machine</a><span class = "text"> - Only dispenses candy if you knock a secret code on it</span>
-    <a href = "https://goo.gl/M7866j" class = "link">Sandwich</a><span class = "text"> - A simple line follower robot built in 4th grade</span>
-</div>
-
 <div id = "skills_panel">
-    <img src = "mac.png" class = "section_image">
+    <img src = "img/mac.png" class = "section_image">
     <h3 class = "section_header">Skills</h3>
-    <p class = "text"> <span class = "category"> Languages Mastered </span> Swift, Javascript, Java, Objective-C, Python</p>
-    <p class = "text"> <span class = "category"> Familiar Frameworks </span> iOS9, Cocoa Touch, Node.js, ReactJS, Flux, Express, MongoDB, Socket.io</p>
+    <p class = "text skills-text"> <span class = "category"> Languages Mastered </span> Swift, Javascript, Java, Objective-C, Python</p>
+    <img src="img/swift.png"/>
+    <img src="img/js.png"/>
+    <img src="img/python.png"/>
+    <img src="img/java.png"/>
+    <p class = "text skills-text"> <span class = "category"> Familiar Frameworks </span> iOS9, Cocoa Touch, Node.js, ReactJS, Flux, Express, MongoDB, Socket.io</p>
+    <img src="img/ios.png"/>
+    <img src="img/node.png"/>
+    <img src="img/react.png"/>
+    <img src="img/mongo.png"/>
     <p class = "text"> <span class = "category"> Familiar Tools </span>XCode, Atom, Sketch, Babel, Webpack, Mocha</p>
     <p class = "text"> <span class = "category"> Familiar Hardware </span> Arduino, Raspberry Pi, Pixhawk Autopilot</p>
 </div>
 
 <div id = "about_panel">
-    <img src = "about.png" class = "section_image">
+    <img src = "img/about.png" class = "section_image">
     <h3 class = "section_header">About me</h3>
     <p class = "text" id = "about_paragraph">
         I'm a self taught iOS and Node.js developer who's loved coding since 4th grade. I've done work in a variety of fields from backend development to UI Design to rapid prototyping. I'm also an enthusiastic member of the Maker movement. I was inspired at an early age to build a robot (which I did!) and have building bigger and bigger things since. One of the projects I've worked on, The Grid, has won over 10 Maker Faire Editor's Choice ribbons at Maker Faires across the country.
@@ -88,8 +146,8 @@
 </div>
 
 <div id = "courses_panel">
-    <img src = "courses.png" class = "section_image">
-    <h3 class = "section_header">Online Courses</h3>
+    <img src = "img/courses.png" class = "section_image">
+    <h3 class = "section_header">Online Courses Taken</h3>
     <p class = "text"> Stanford iPhone Application Development (CS193P)</p>
     <p class = "text"> Harvard Introduction to Computer Science I (CS50)</p>
     <p class = "text"> Udacity Design of Computer Programs (CS212)</p>
@@ -99,11 +157,11 @@
 
 <div id = "footer_panel">
     <p>© Andrew Ke 2015    -     Font used: Raleway</p>
-    <a href = "https://www.github.com/AndrewKe"><img src = "github.png" class = "social-dark"></a>
-    <a href = "https://www.linkedin.com/in/andrew-ke-1a9903b6"><img src = "linkedin.png" class = "social-dark"></a>
-    <a href = "https://angel.co/andrew-ke"><img src = "angellist.png" class = "social-dark"></a>
-    <a href = "https://www.andrewke.org"><img src = "wordpress.png" class = "social-dark"></a>
-    <a href = "mailto:andrew@andrewke.org"><img src = "mail.png" class = "social-dark"></a>
+    <a href = "https://www.github.com/AndrewKe"><img src = "img/github.png" class = "social-dark"></a>
+    <a href = "https://www.linkedin.com/in/andrew-ke-1a9903b6"><img src = "img/linkedin.png" class = "social-dark"></a>
+    <a href = "https://angel.co/andrew-ke"><img src = "img/angellist.png" class = "social-dark"></a>
+    <a href = "https://www.andrewke.org"><img src = "img/wordpress.png" class = "social-dark"></a>
+    <a href = "mailto:andrew@andrewke.org"><img src = "img/mail.png" class = "social-dark"></a>
 </div>
 
 </body>
